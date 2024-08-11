@@ -44,7 +44,7 @@ module carry_lookahead_adder_datapath
          assign carry_reg[0] = carry_in;
          
          PIPO 
-            #(.N(16))
+              #(.N(N))
               p_a (.clk(clk),
                    .clear(clr_a),
                    .load(load_a),
@@ -52,7 +52,7 @@ module carry_lookahead_adder_datapath
                    .data_out(A_out));
          
          PIPO
-             #(.N(16))
+              #(.N(N))
               p_b (.clk(clk),
                    .clear(clr_b),
                    .load(load_b),
@@ -60,7 +60,7 @@ module carry_lookahead_adder_datapath
                    .data_out(B_out));
                    
          gen_prop
-             #(.N(16))
+                  #(.N(N))
                   gp1 (.A(A_out),
                        .B(B_out),
                        .generate_value(generate_value),
