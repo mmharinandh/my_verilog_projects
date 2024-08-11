@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Harinandh M M
 // 
 // Create Date: 10.08.2024 07:32:41
 // Design Name: 
